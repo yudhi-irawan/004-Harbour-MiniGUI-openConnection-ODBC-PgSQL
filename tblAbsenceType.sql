@@ -1,8 +1,9 @@
 -- c:\PostgreSQL\17\pgAdmin 4\runtime\pgAdmin4.exe
 -- password: odoo
 
--- buat database: mcg_db
+-- create blank database: mcg_db
 -- owner: postgres
+-- password: odoo (for example)
 
 -- https://www.postgresql.org/ftp/odbc/versions.old/msi/
 -- psqlodbc_16_00_0000.zip --> 2025-07-09 success!

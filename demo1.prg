@@ -29,27 +29,11 @@ PROCEDURE Main
 RETURN
 
 
-Function TEST
-
-	//LOCAL cConStr := "Server=localhost;Driver={MySQL ODBC 3.51 Driver};dsn=;User=root;database=test;"
-	
-	
-	/*
-	function createDB(){
-	define("DEF_DATABASECONNECTION", 'pgsql');
-	define("DEF_HOST", 'localhost');
-	define("DEF_USER", 'postgres');
-	define("DEF_PASSWORD", 'yyyy');
-	define("DEF_DATABASENAME", 'escon3');	
-	$conn = new PDO(DEF_DATABASECONNECTION . ":host=" . DEF_HOST . ";dbname=" . DEF_DATABASENAME, DEF_USER, DEF_PASSWORD); 
-	return $conn;	 
-	*/
-	
+Function TEST	
 	LOCAL cConStr := "Driver={PostgreSQL ANSI};Server=localhost;Port=5432;Database=mcg_db;Uid=postgres;Pwd=odoo;"
 	//LOCAL cConStr := "Driver={PostgreSQL ANSI(x64)};Server=localhost;Port=5432;Database=mcg_db;Uid=postgres;Pwd=odoo;"	//2025-07-09 error!!!
 	
    LOCAL dsFunctions := TODBC():New( cConStr )
-
 
 	Str:='SELECT AbsenceTypeCode FROM tblAbsenceType'
 	dsFunctions:Setsql(Str)
@@ -63,7 +47,6 @@ Function TEST
    WITH dsFunctions DO
 
       ::SetSQL( "SELECT * FROM tblabsencetype" )
-	  //::SetSQL( "CALL test_output_procedure" )
       if ::Open()
 
 		/////

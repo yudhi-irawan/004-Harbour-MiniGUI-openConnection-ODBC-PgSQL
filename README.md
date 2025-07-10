@@ -16,7 +16,7 @@ run vscode or your favourite editor
 code .
 open new terminal
 </pre>
-<span class="font-weight-bold">download harbour-MiniGUI at: </span>
+<span class="font-weight-bold">download Current version Harbour+MiniGUI: </span>
 <i>	
 <a href="https://www.hmgextended.com/download.html">https://www.hmgextended.com/download.html</a>
 </i>
@@ -36,16 +36,17 @@ open new terminal
 <a href="https://www.postgresql.org/ftp/odbc/versions.old/msi/">https://www.postgresql.org/ftp/odbc/versions.old/msi/</a>
 </i>
 <br>
-
-
-
-
-
-
-
 <pre>
-installation directory: c:\PostgreSQL\17
+-1-
+install Harbour+MiniGUI at: c:\MiniGUI
+if exist c:\MiniGUI --> rename first to c:\MiniGUI-old
 
+-2-
+extract Borland C++ Compiler version 5.8 (bcc582.zip)
+to c:\Borland\BCC58
+
+-3-
+install database server at: c:\PostgreSQL\17
 checked PostgreSQL Server
 checked PgAdmin 4
 unchecked Stack Builder
@@ -102,21 +103,9 @@ installed in your PC
 <br>🌱🌱🌱<br>
 </i>
 <pre>
-download Current version Harbour+MiniGUI
---> hmg-25.06-setup.zip
-install at: c:\MiniGUI
-if exist c:\MiniGUI --> rename first to c:\MiniGUI-old
 
-download Borland C++ Compiler version 5.8
---> bcc582.zip
-install Borland at c:\Borland\BCC58
 
-create directory: c:\git_repo\
-goto: c:\git_repo\
-run CMD
-c:\git_repo\git clone https://github.com/yudhi-irawan/004-Harbour-MiniGUI-openConnection-ODBC-PgSQL.git
-c:\git_repo\cd 004-Harbour-MiniGUI-openConnection-ODBC-PgSQL
-dir
+
 
 run vscode or your favourite editor
 code .

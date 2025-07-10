@@ -20,19 +20,22 @@ open new terminal
 <i>	
 <a href="https://www.hmgextended.com/download.html">https://www.hmgextended.com/download.html</a>
 </i>
+<br>
 <span class="font-weight-bold">download Borland C++ Compiler version 5.8: </span>
 <i>	
 <a href="https://www.hmgextended.com/files/MISC/bcc582.zip">https://www.hmgextended.com/files/MISC/bcc582.zip</a>
 </i>
+<br>
 <span class="font-weight-bold">download database server for windows at: </span>
 <i>	
 <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>
 </i>
+<br>
 <span class="font-weight-bold">download PgSQL ODBC Connector at: </span>
 <i>	
 <a href="https://www.postgresql.org/ftp/odbc/versions.old/msi/">https://www.postgresql.org/ftp/odbc/versions.old/msi/</a>
 </i>
-
+<br>
 
 
 

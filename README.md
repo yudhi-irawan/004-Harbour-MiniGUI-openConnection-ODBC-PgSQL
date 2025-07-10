@@ -16,7 +16,7 @@ run vscode or your favourite editor
 code .
 open new terminal
 </pre>
-download<br>
+download:<br>
 <span class="font-weight-bold">Current version Harbour+MiniGUI: </span>
 <i>	
 <a href="https://www.hmgextended.com/download.html">https://www.hmgextended.com/download.html</a>

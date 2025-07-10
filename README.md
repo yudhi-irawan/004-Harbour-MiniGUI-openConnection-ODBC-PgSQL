@@ -42,9 +42,11 @@ download:<br>
 install Harbour+MiniGUI at: c:\MiniGUI
 if exist c:\MiniGUI --> rename first to c:\MiniGUI-old
 
+
 -2-
 extract Borland C++ Compiler version 5.8 (bcc582.zip)
 to c:\Borland\BCC58
+
 
 -3-
 install database server at: c:\PostgreSQL\17
@@ -61,6 +63,14 @@ next
 
 Add c:\PostgreSQL\17 to the PATH
 
+
+-4-
+install PgSQL ODBC Connector
+psqlodbc_16_00_0000.zip --> i use this file!
+installed in your PC
+
+
+-5-
 goto window Terminal or goto directory: c:\PostgreSQL\17\bin\
 create user for odoo, run:
 createuser -U postgres -P -s -e odoo
@@ -82,35 +92,10 @@ Create table and insert data:
 -open with your editor file: tblAbsenceType.sql
 -copy and paste to pgAdmin 4 - Query
 -click Execute Script (F5)
-</pre>
-<br>
-<br>
-<span class="font-weight-bold">This example requires PgSQL ODBC Connector at: </span>
-<i>	
-<a href="https://www.postgresql.org/ftp/odbc/versions.old/msi/">https://www.postgresql.org/ftp/odbc/versions.old/msi/</a>
-<br>🌱🌱🌱<br>
-</i>
-<pre>
-psqlodbc_16_00_0000.zip --> i use this file!
-psqlodbc_16_00_0000-x64.zip
-
-installed in your PC
-</pre>
-<br>
-<br>
-<span class="font-weight-bold">visit to: </span>
-<i>	
-<a href="https://www.hmgextended.com/download.html">https://www.hmgextended.com/download.html</a>
-<br>🌱🌱🌱<br>
-</i>
-<pre>
 
 
 
 
-run vscode or your favourite editor
-code .
-open new terminal
 compile.bat
 run demo1.exe
 

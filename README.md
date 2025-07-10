@@ -3,11 +3,52 @@
 
  💞️💞️💞️<span class="font-weight-bold">Prepare | Download | Action</span>💞️💞️💞️
  <br>
-<br><span class="font-weight-bold">download and install database server for windows: </span>
+<br>
+-1-
+<pre>
+create directory: c:\git_repo\
+goto: c:\git_repo\
+run CMD
+c:\git_repo\git clone https://github.com/yudhi-irawan/004-Harbour-MiniGUI-openConnection-ODBC-PgSQL.git
+c:\git_repo\cd 004-Harbour-MiniGUI-openConnection-ODBC-PgSQL
+dir
+
+run vscode or your favourite editor
+code .
+open new terminal
+</pre>
+-2-
+<span class="font-weight-bold">download harbour-MiniGUI at: </span>
+<i>	
+<a href="https://www.hmgextended.com/download.html">https://www.hmgextended.com/download.html</a>
+<br>🌱🌱🌱<br>
+</i>
+-3-
+<span class="font-weight-bold">download Borland C++ Compiler version 5.8: </span>
+<i>	
+<a href="https://www.hmgextended.com/files/MISC/bcc582.zip">https://www.hmgextended.com/files/MISC/bcc582.zip</a>
+<br>🌱🌱🌱<br>
+</i>
+-4-
+<span class="font-weight-bold">download database server for windows at: </span>
 <i>	
 <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>
 <br>🌱🌱🌱<br>
 </i>
+-5-
+<span class="font-weight-bold">download PgSQL ODBC Connector at: </span>
+<i>	
+<a href="https://www.postgresql.org/ftp/odbc/versions.old/msi/">https://www.postgresql.org/ftp/odbc/versions.old/msi/</a>
+<br>🌱🌱🌱<br>
+</i>
+
+
+
+
+
+
+
+
 <pre>
 installation directory: c:\PostgreSQL\17
 
@@ -22,7 +63,9 @@ Port: 5432
 Locale: DEFAULT
 next
 
-goto directory: c:\PostgreSQL\17\bin\
+Add c:\PostgreSQL\17 to the PATH
+
+goto window Terminal or goto directory: c:\PostgreSQL\17\bin\
 create user for odoo, run:
 createuser -U postgres -P -s -e odoo
 Enter password for new role: odoo
@@ -39,10 +82,10 @@ pass: odoo (optional for demo)
 Create table and insert data:
 -goto directory and run: c:\PostgreSQL\17\pgAdmin 4\runtime\pgAdmin4.exe
 -select mcg_db database
--click tab SQL
+-click Query Tool
 -open with your editor file: tblAbsenceType.sql
--copy and paste to phpmyadmin-SQL
--click GO
+-copy and paste to pgAdmin 4 - Query
+-click Execute Script (F5)
 </pre>
 <br>
 <br>
@@ -58,7 +101,8 @@ psqlodbc_16_00_0000-x64.zip
 installed in your PC
 </pre>
 <br>
-<br><span class="font-weight-bold">visit to: </span>
+<br>
+<span class="font-weight-bold">visit to: </span>
 <i>	
 <a href="https://www.hmgextended.com/download.html">https://www.hmgextended.com/download.html</a>
 <br>🌱🌱🌱<br>

@@ -2,14 +2,14 @@
 -- password: odoo
 
 -- create blank database: mcg_db
--- owner: postgres
+-- owner: odoo (for example)
 -- password: odoo (for example)
 
 -- https://www.postgresql.org/ftp/odbc/versions.old/msi/
 -- psqlodbc_16_00_0000.zip --> 2025-07-09 success!
 -- psqlodbc_16_00_0000-x64.zip --> 2025-07-09 error!!!
 
-
+-- Copy Paste from here............................................................
 CREATE TABLE tblAbsenceType (
     ID               SERIAL PRIMARY KEY,
     AbsenceTypeCode  VARCHAR(4) NOT NULL DEFAULT '0000',
@@ -49,3 +49,4 @@ INSERT INTO tblAbsenceType (AbsenceTypeCode,Description,           Description2,
 ('T',            'TERLAMBAT',           '',	 	    '',    2,    11,        0,        11,      100,          2,          3,           'SAMPLE'),
 ('TB',           'TERLAMBAT (DIBAYAR)', '',	 	    '',    0,    100,       0,        100,     100,          2,          3,           'SAMPLE');
 
+-- Copy Paste to here............................................................

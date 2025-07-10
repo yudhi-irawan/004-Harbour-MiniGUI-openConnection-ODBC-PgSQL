@@ -30,8 +30,9 @@ RETURN
 
 
 Function TEST	
-	LOCAL cConStr := "Driver={PostgreSQL ANSI};Server=localhost;Port=5432;Database=mcg_db;Uid=postgres;Pwd=odoo;"
 	//LOCAL cConStr := "Driver={PostgreSQL ANSI(x64)};Server=localhost;Port=5432;Database=mcg_db;Uid=postgres;Pwd=odoo;"	//2025-07-09 error!!!
+	//LOCAL cConStr := "Driver={PostgreSQL ANSI};Server=localhost;Port=5432;Database=mcg_db;Uid=postgres;Pwd=odoo;"			//ok!
+	LOCAL cConStr := "Driver={PostgreSQL ANSI};Server=localhost;Port=5432;Database=mcg_db;Uid=odoo;Pwd=odoo;"				//ok!
 	
    LOCAL dsFunctions := TODBC():New( cConStr )
 

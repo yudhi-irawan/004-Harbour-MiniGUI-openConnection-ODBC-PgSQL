@@ -71,21 +71,34 @@ installed in your PC
 
 
 -5-
-goto window Terminal or goto directory: c:\PostgreSQL\17\bin\
 create user for odoo, run:
+goto window Terminal or goto directory: c:\PostgreSQL\17\bin\
+
 createuser -U postgres -P -s -e odoo
 Enter password for new role: odoo
 Enter it again: odoo
 Password: odoo
 
+-6-
 ceate empty database:
-database-1: mcg_db
-database-2: laravel
+goto window Terminal or goto directory: c:\PostgreSQL\17\bin\
 
-user: odoo (optional for demo)
-pass: odoo (optional for demo)
+createdb -U postgres -O odoo -E UTF8 mcg_db
+createdb -U postgres -O odoo -E UTF8 laravel
 
+password: odoo (optional for demo)
+
+
+-7-
 Create table and insert data:
+goto window Terminal or goto directory: c:\PostgreSQL\17\bin\
+
+psql -U postgres -d mcg_db -f tblAbsenceType.sql
+
+Password for user postgres: odoo
+
+
+or you can use PgAdmin:
 -goto directory and run: c:\PostgreSQL\17\pgAdmin 4\runtime\pgAdmin4.exe
 -select mcg_db database
 -click Query Tool
@@ -94,18 +107,14 @@ Create table and insert data:
 -click Execute Script (F5)
 
 
-
-
+-8-
 compile.bat
 run demo1.exe
 
+</pre>
 
 other reference: 
 .\PostgreSQL
-
-</pre>
-
-
 <br><br>
  
  
